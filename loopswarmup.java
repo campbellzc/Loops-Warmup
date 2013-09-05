@@ -1,6 +1,7 @@
 public class loopswarmup {
 	public static void main(String[] args) {
-		warmUp0(5);
+		//warmUp0(5);
+		warmUp1(2,3);
 	}
 	public static void warmUp0(int n) {
 		
@@ -13,5 +14,13 @@ public class loopswarmup {
 
 		}
 		System.out.println(total);
+	}
+	public static void warmUp1(int x, int n) {
+		int total=x;
+		while (n >= 1) {
+			System.out.println(total);
+			total = total*x;
+			n--;
+		}
 	}
 }
